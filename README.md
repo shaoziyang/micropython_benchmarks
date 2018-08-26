@@ -2,6 +2,8 @@
 
 MicroPython Benchmarks in different microcontrollers and hardware. I hope these data will provide some reference for you when necessary.
 
+If you have some data is not include, please send it to [me](shaoziyang@micropython.org.cn), I will add it to the table. 
+
 ## Test board:
 
 * micro:bit
