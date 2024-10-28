@@ -145,15 +145,18 @@ def run():
                 tr.append([TEST[0].format(item), str(r)])
 
 def print_result():
-    print('|{:36}|{:12}|'.format('item','result'))
-    print('|{:36}|{:12}|'.format('-','  :-:'))
-    print('|{:36}|{:12}|'.format('Platform', PLATFORM))
-    print('|{:36}|{:12}|'.format('Version', VERSION))
-    print('|{:36}|{:12}|'.format('Frequency', FREQ))
-    print('|{:36}|{:12}|'.format('Memory', MEMORY))
+    r1 = '| item | Platform | Version | Frequency | Memory |'
+    r2 = '| - | - | - | - | - |'
+    r3 = '| {} | {} | {} | {} | {} |'.format('result', PLATFORM, VERSION, FREQ, MEMORY)
 
     for i in range(len(tr)):
-        print('|{:36}|{:12}|'.format(tr[i][0], tr[i][1]))
+        r1 += ' {} |'.format(tr[i][0])
+        r2 += ' - |'
+        r3 += ' {} |'.format(tr[i][1])
+
+    print(r1)
+    print(r2)
+    print(r3)
 
 ###############################################################################
 
