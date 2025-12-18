@@ -48,7 +48,7 @@ except:
                 return psutil.cpu_freq().max
         except:
             def freq():
-                return 'unknow'
+                return 'unknown'
 
 def memory():
     try:
@@ -57,7 +57,7 @@ def memory():
         try:
             r = psutil.virtual_memory().total
         except:
-            r = 'unkonw'
+            r = 'unknown'
     return r
 
 PLATFORM = sys.platform
